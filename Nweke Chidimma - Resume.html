@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <title>Nweke Chidimma Dominic - Resume</title>
+    <meta name="keywords" content="Nweke Chidimma Dominic,resume,curriculum vitae,cv" />
+    <meta name="description" content="Nweke Chidimma Dominic's Resume" />
+    <meta property="og:title" content="Resume of Nweke Chidimma Dominic" />
+    <meta property="og:type" content="document" />
+    <meta
+      property="og:image"
+      content="https://web.facebook.com/photo.php?fbid=2090322774594175&set=t.100009423133061&type=3"
+    />
+    <meta
+      property="og:description"
+      content="Nweke Chidmma Dominic's Interactive Resume"
+
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+      html,
+      body {
+        background: #ccc;
+        font-family: Quicksand, Arial, Verdana, sans-serif;
+        font-size: 14px;
+        color: #444;
+      }
+
+      main {
+        background: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+        margin: 2rem auto;
+        padding: 2.75rem;
+        position: relative;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        font-weight: normal;
+        color: #000;
+      }
+
+      h2 {
+        color: #47a;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        color: #111;
+        font-size: 1.25rem;
+        margin-top: 0rem;
+        margin: 0;
+        font-weight: normal;
+      }
+
+      h3 span.dept {
+        color: #aaa;
+      }
+
+      h3 span.dept::before {
+        content: "";
+        border-left: 1px solid #ccc;
+        padding-left: 0.4rem;
+      }
+
+      h4 {
+        margin: 0;
+        font-weight: normal;
+      }
+
+      h4 span.dates {
+        color: #888;
+        display: inline-block;
+        float: right;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #369;
+      }
+
+      a:hover {
+        color: #36c;
+      }
+
+      time {
+        display: inline-block;
+        min-width: 2rem;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      .normal {
+        font-weight: normal;
+      }
+
+      .position {
+        margin-top: 0.75rem;
+        transition: opacity 0.7s;
+      }
+
+      .no-bullets,
+      .no-bullets ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        color: #000;
+        font-weight: bold;
+      }
+      .no-bullets ul {
+        font-weight: normal;
+      }
+      .no-bullets span {
+        color: #666;
+      }
+
+      #contact {
+        text-align: right;
+        font-size: 0.9rem;
+      }
+
+      #phone {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-decoration: none !important;
+      }
+
+      #location {
+        font-size: 1.1rem;
+      }
+
+      #languages {
+        column-count: 4;
+      }
+
+      a,
+      a:visited,
+      a:link,
+      a:active,
+      a:focus,
+      #languages label {
+        color: #395;
+      }
+
+      #professional-experience {
+        position: relative;
+      }
+
+      main input {
+        position: absolute;
+        left: -10000px;
+      }
+
+      .educert {
+        display: flex;
+      }
+      .educert li {
+        flex: 1;
+        align-items: start;
+        justify-content: start;
+      }
+
+      #python:not(:checked) ~ div [for="python"]::before,
+      #r:not(:checked) ~ div [for="r"]::before,
+      #html:not(:checked) ~ div [for="html"]::before,
+      #javascript:not(:checked) ~ div [for="javascript"]::before,
+      #css:not(:checked) ~ div [for="css"]::before,
+      #java:not(:checked) ~ div [for="java"]::before,
+      #sql:not(:checked) ~ div [for="sql"]::before, {
+        content: "\2610 ";
+        font-size: 1.2rem;
+        color: #aaa;
+        font-weight: bold;
+      }
+
+      #python:checked ~ div [for="python"]::before,
+      #r:checked ~ div [for="r"]::before,
+      #html:checked ~ div [for="html"]::before,
+      #javascript:checked ~ div [for="javascript"]::before,
+      #css:checked ~ div [for="css"]::before,
+      #java:checked ~ div [for="java"]::before,
+      #sql:checked ~ div [for="sql"]::before, {
+        content: "\2611 ";
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: bold;
+      }
+
+      #filters {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+
+      #filters > ul {
+        list-style: none;
+        padding-left: 0;
+        margin: -0.5rem;
+        padding: 0.5rem;
+      }
+
+      #filters > ul > li > h3 {
+        margin: 0;
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #395;
+        text-transform: uppercase;
+      }
+
+      #filters > ul > li > h3::before {
+        content: "\2610 ";
+        font-size: 1.2rem;
+      }
+
+      input:checked ~ div #filters > ul > li > h3::before {
+        content: "\2611 ";
+      }
+
+      #filters > ul:hover {
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      #filters > ul:hover ul {
+        list-style: none;
+        padding-left: 0;
+        display: block;
+        column-count: 4;
+      }
+
+      #filters > ul > li > ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: none;
+        padding: 1rem;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      input:checked ~ div section.position,
+      input:checked ~ div #languages label {
+        opacity: 0.25;
+      }
+
+      #python:checked ~ div .position.python,
+      #r:checked ~ div .position.r,
+      #html:checked ~ div .position.html,
+      #javascript:checked ~ div .position.javascript,
+      #css:checked ~ div .position.css,
+      #java:checked ~ div .position.java,
+      #sql:checked ~ div .position.sql,
+      #python:checked ~ div #languages [for="python"],
+      #r:checked ~ div #languages [for="r"],
+      #html:checked ~ div #languages [for="html"],
+      #javascript:checked ~ div #languages [for="javascript"],
+      #css:checked ~ div #languages [for="css"],
+      #java:checked ~ div #languages [for="java"],
+      #sql:checked ~ div #languages [for="sql"] {
+        opacity: 1;
+      }
+
+      #contact-mini {
+        display: flex;
+        margin-top: 1rem;
+      }
+
+      #contact-mini > div {
+        font-size: 0.75rem;
+        flex: 1;
+      }
+
+      #contact-mini > div:nth-child(2) {
+        text-align: center;
+        flex: 2;
+      }
+      #contact-mini > div:last-child {
+        text-align: right;
+      }
+
+      input:checked ~ div #languages label[for]::before,
+      input:not(:checked) ~ div #languages label[for]::before {
+        content: "";
+      }
+
+      #contact {
+        display: none;
+      }
+
+      @media all and (min-width: 630px) {
+        main {
+          max-width: 600px;
+        }
+        #contact-mini > div {
+          font-size: 1rem;
+        }
+      }
+
+      @media all and (min-width: 1000px) {
+        html,
+        body {
+          font-size: 16px;
+        }
+        main {
+          max-width: 920px;
+          display: flex;
+        }
+        main > div:first-child {
+          flex: 1;
+        }
+        main > div:last-child {
+          width: 21%;
+          margin-left: 4%;
+        }
+        #languages {
+          column-count: 1;
+        }
+        .educert {
+          display: block;
+        }
+        .educert > li:nth-child(n + 2) {
+          margin-top: 0.75rem;
+        }
+        #contact-mini {
+          display: none;
+        }
+        #contact {
+          display: block;
+        }
+        #email,
+        #website {
+          font-size: 0.9em;
+        }
+      }
+
+      @media all and (min-width: 1200px) {
+        html,
+        body {
+          font-size: 18px;
+        }
+        main {
+          max-width: 1120px;
+        }
+        #email,
+        #website {
+          font-size: 1em !important;
+        }
+      }
+
+      @media print {
+        @page {
+          size: 900px;
+        }
+        a,
+        a:visited,
+        a:link,
+        a:active,
+        a:focus,
+        #languages label {
+          text-decoration: none;
+          color: #000;
+        }
+        main {
+          margin: 0;
+          max-width: 920px;
+          display: flex;
+          box-shadow: none;
+        }
+        main > div:first-child {
+          flex: 1;
+        }
+        main > div:last-child {
+          width: 21%;
+          margin-left: 4%;
+        }
+        #filters {
+          display: none;
+        }
+        #languages {
+          column-count: 1;
+        }
+        .educert {
+          display: block;
+        }
+        .educert > li:nth-child(n + 2) {
+          margin-top: 0.75rem;
+        }
+        .position {
+          opacity: 1 !important;
+        }
+        #contact-mini {
+          display: none;
+        }
+        #contact {
+          display: block;
+        }
+      }
+
+
+      h5 {
+        text-align: center;
+        color: #a8a8a8;
+      }
+
+      form {
+        max-width: 600px;
+        text-align: center;
+        margin: 20px auto;
+      }
+
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <main id="resume" itemscope itemtype="http://schema.org/Person">
+      <input type="checkbox" id="python" />
+      <input type="checkbox" id="r" />
+      <input type="checkbox" id="html" />
+      <input type="checkbox" id="javascript" />
+      <input type="checkbox" id="css" />
+      <input type="checkbox" id="java" />
+      <input type="checkbox" id="sql" />
+
+      <div>
+        <header>
+
+          <h1 itemprop="name">Nweke Chidimma Dominic</h1>
+          <p id="objective" itemprop="description">
+            <span itemprop="jobTitle">Software Engineer</span> with
+            good experience building
+            <span itemprop="knowsAbout"
+              >machine learning models for classification, sentiment analysis, computer vision, natural language processing, etc.,
+              cloud computing, and AI product management </span
+            >
+            seeking
+            <span itemprop="seeks">machine learning, data science, AI product management and backend opportunities</span
+            >.
+          </p>
+          <address id="contact-mini">
+            <div itemprop="email">
+              <a href="realchidinweke@gmail.com"
+                >realchidinweke@gmail.com</a
+              >
+            </div>
+            <a href="tel:+2349035485284"
+              ><span itemprop="telephone">(234) 903-5485-284</span></a
+            >
+          </address>
+        </header>
+        <section id="professional-experience">
+          <h2>Projects</h2>
+          <div id="filters">
+            <ul>
+              <li>
+                <h3>Filters</h3>
+                <ul>
+                  </li>
+                  <li><label for="python">Python</label></li>
+                  <li><label for="r">R</label></li>
+                  <li><label for="css">CSS</label></li>
+                  <li><label for="html">HTML</label></li>
+                  <li><label for="java">Java</label></li>
+                  <li><label for="javascript">JavaScript</label></li>
+                  <li><label for="sql">SQL</label></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <section
+            itemprop="memberOf"
+            itemscope
+            itemtype="http://schema.org/Organization"
+            class="python html css javascript"
+          >
+            <h3>
+              <span itemprop="name">Udacity Machine Learning Engineer Nanodegree Capstone</span>
+            </h3>
+            <h4
+              itemprop="member"
+              itemscope
+              itemtype="http://schema.org/OrganizationRole"
+            >
+              <span itemprop="roleName">Dog Breed Classifier Using CNNs</span>
+              <span class="dates">
+                <time itemprop="startDate">2020</time>
+                -
+                <time itemprop="endDate">2020</time>
+              </span>
+            </h4>
+            <ul itemprop="description">
+              <li>
+                Built a CNN model using pytorch from scratch, which achieved a 45% accuracy on the test 
+                set after 200 training epochs.
+              </li>
+              <li>
+                Utilized transfer learning to increase accuracy to 86% on the test after 30 training epochs.
+              </li>
+              <li>
+                Wrote an algorithm that overlays dog filters on images.
+              </li>
+              <li>
+                Added a functionality to classify dog mutts with an accuracy of 60%.
+              </li>
+              <li>
+                Deployed the models in a pipeline to a web app using flask.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            itemprop="memberOf"
+            itemscope
+            itemtype="http://schema.org/Organization"
+            class="python aws"
+          >
+            <h3>
+              <span itemprop="name">Plagiarism Detector</span>
+            </h3>
+            <h4
+              itemprop="member"
+              itemscope
+              itemtype="http://schema.org/OrganizationRole"
+            >
+              <span class="dates">
+                <time itemprop="startDate">2020</time>
+                -
+                <time itemprop="endDate">2020</time>
+              </span>
+            </h4>
+            <ul itemprop="description">
+              <li>
+                Built a machine learning model that examines a text file and performs binary classification, labeling that
+                file as either plagiarized or not, depending on how similar the text file is to a provided source text, with a 98% accuracy.
+              </li>
+              <li>
+                Deployed the plagiarsm model using AWS SageMaker.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section id="professional-experience">
+          <h2>Leadership</h2>
+          <section
+            itemprop="memberOf"
+            itemscope
+            itemtype="http://schema.org/Organization"
+          >
+            <h3>
+              <span itemprop="name">Student Leader at Udacity Bertelsmann Scholarship Challenge</span>
+            </h3>
+            <h4
+              itemprop="member"
+              itemscope
+              itemtype="http://schema.org/OrganizationRole"
+            >
+              <span class="dates">
+                <time itemprop="startDate">2020</time>
+                -
+                <time itemprop="endDate">2021</time>
+              </span>
+            </h4>
+            <ul itemprop="description">
+              <li>
+                Helped about an extra 10 students to pass the first phase of the schorlarship by engaging them in daily motivational
+                quotes and providing help to techinical problems.
+              </li>
+            </ul>
+          </section>
+          <section
+            itemprop="memberOf"
+            itemscope
+            itemtype="http://schema.org/Organization"
+          >
+            <h3>
+              <span itemprop="name">Music Director at St. Thomas Acquinas Chaplaincy Choir, Owerri</span>
+            </h3>
+            <h4
+              itemprop="member"
+              itemscope
+              itemtype="http://schema.org/OrganizationRole"
+            >
+              <span class="dates">
+                <time itemprop="startDate">2020</time>
+                -
+                <time itemprop="endDate">2021</time>
+              </span>
+            </h4>
+            <ul itemprop="description">
+              <li>
+                Led and supervised a fourty-man committee to organize the best and biggest yet (according to reviews) student musical
+                concert in South-East Nigeria in just two months, with refreshments for over 1000 audience and a revenue of up to two 
+                million NGN for the choir.
+              </li>
+            </ul>
+          </section>
+
+        </section>
+      </div>
+      <div>
+        <address id="contact" class="contact-2">
+          <div
+            id="location"
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span itemprop="addressLocality">Lagos</span>,
+            <span itemprop="addressRegion">Nigeria</span>
+          </div>
+          <a href="tel:+19174055831" id="phone">0903-5485-284</a>
+          <div>
+            <a href="mailto:realchidinweke@gmail.com" id="email"
+              >realchidinweke@gmail.com</a
+            >
+          </div>
+        </address>
+
+        <section>
+          <h2>Programming Languages</h2>
+          <ul class="no-bullets" id="languages">
+            <li>
+              <label for="javascript" itemprop="knowsAbout">JavaScript</label>
+            </li>
+            <li><label for="python" itemprop="knowsAbout">Python</label></li>
+            <li><label for="r" itemprop="knowsAbout">R</label></li>
+            <li><label for="html" itemprop="knowsAbout">HTML</label></li>
+            <li><label for="css" itemprop="knowsAbout">CSS</label></li>
+            <li><label for="java" itemprop="knowsAbout">Java</label></li>
+            <li><label for="sql" itemprop="knowsAbout">SQL</label></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Education and Certifications</h2>
+          <ul class="no-bullets educert">
+            <li
+              itemprop="alumniOf"
+              itemscope
+              itemtype="http://schema.org/EducationalOrganization"
+            >
+              <span itemprop="name">Federal University of Technology, Owerri</span>
+              <ul>
+                <li itemprop="award">B.Tech. Chemical Engineering</li>
+              </ul>
+            </li>
+            <li
+              itemprop="alumniOf"
+              itemscope
+              itemtype="http://schema.org/EducationalOrganization"
+            >
+              <span itemprop="name">Udacity Machine Learning Engineering Nanodegree</span>
+              <ul>
+                <li itemprop="award">Machine Learning Engineer</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Volunteering</h2>
+          <ul class="no-bullets">
+            <li>
+              <span>Ninspiro Book Club</span>
+              <ul>
+                <li>
+                  Book Review Team Lead<br />
+                  <span>
+                    <time>2018</time>
+                    - PRESENT
+                  </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <a href="https://www.twitter.com/iamnwekegabriel" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/iamnwekechidimma" class="fa fa-linkedin"></a>
+      </div>
+    </main>
+    <div>
+      <h5>Contact Me</h5>
+      <form>
+        <div>
+          <input type="text" id="input-name" placeholder="Name">
+          <input type="email" id="input-email" placeholder="Email address">
+          <input type="text" id="input-subject" placeholder="Subject">
+        </div>
+        <div>
+          <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+        </div>  
+        <input type="submit" value="Submit" id="input-submit">
+        <p>
+          <img src="https://i1.wp.com/businessday.ng/wp-content/uploads/2021/03/Untitled-design-2021-03-19T131641.082.png?fit=700%2C400&ssl=1" width="130" height="104" alt="i4G logo">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAn1BMVEUArv///////f/8//8ArvwAr//+//0Aq//1//8AsP0AsPoApe3P+/9Htuns//8AovBRwu4PqvQWq/Da+f+28Pvd/P1Pve9BtvQIqf///vnv//8AsPcAtP////YAougAofAVqeiv8//j9/+6+P+a7v0orecKouLN+f8hsPBKte4AtPPX//8nseOEy+xYue85uvNJxe9Ovuj//OpHt+RHs/MMdU7PAAAE5UlEQVR4nO2dC1PbOBRGZVvvvLBTg41JgW2zONuWPtj//9tWcgIN4OukmYnWTr4DMzDgKD65V8pImbmXMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+yP+7xs4GGGUYEpUnRdVlqX+ujYsE5wLofZ6Li5YFfrF4jyrb9xziw78zXHD2l8F62/8xr1IuzHMsPCGgqV32UylXYzuMndhkbbeWmPITOcAG7KUG2GdaFjD2f18/td8B59qd2/td+b+arkZfd41hGP8nbl8Fja04UMky2gRdSAX+VIZIrm8IWMfP3QNsEGvlDUsdAzN3w/lYpGUSSd53WXo7toZdo/g0StWmUIEnofOMEripPvFj6e1qojkMkqtDXeTrFhti9DvO2L0EMcuETtvTfoYcmoEt4yy0V6GE+aylFEDHYvROJI7g5hnSnAyTd3Mmu01DyduFKMCrzTOMIYhDGEIwyMDQxjCEIbHB4ana5i4jfHzjqN0ewtu2w2VM+dir71FvwxjncQLudm6ymld8H8IQ1O5HeLbHXAzhpT9NZRxWUZxksQNUZwvGbMFbXjjDONtem+oIz3Vib7Wa6IvXznnhKGwLlNH94neZhPE/hpG0bfJ4+rx4nLN42XanDe1odw6o3j6/XKbJ93Y9diwjC4K5g9gGgTzJ9rUQY0/4eXs9Zn37TTpeQydITPCWNXAreWcEWdkQqxPXtQ2zjDpu+EPVrlFxMG58Yf6Vqj2jyaE/6/zNJuLuf8x6r1h5GJIBW0PxGwaxdG7MXtnyA8/9oNhUM7a8PCPUIZiiBjSDMXw9GN4+obIUhoYBuWsDTEPaYZiiBjSwDAoyNKDgGFQztoQ85BmKIaIIQ0Mg4IsPQgYBuWsDTEPaYZiiBjSwDAoyNKDgGFQztoQ85BmKIaIIQ0Mg4IsPQgYBuWsDTEPaYZiiBjSwDAoyNKDgGFQztoQ85BmKIaIIQ0Mg4IsPQgYBuWsDTEPaYZiiBjSwDAoyNKDgGFQztoQ85BmKIanHMPYGfraLbxBGKMKxtrr06imJvvzpZsHzK7f2vXNUOofxthqU6BGKadgyIiuC++/+tNt7w0TfVGol7LUillrDWuv9eX8lHpTrUf13zCOLosmdg0+QpseCe8xQinfGGE7S3n/szTSP6vqpdsDt77OFSM6B/gCUm8Xpdvrd8tMzwx18m3y82l1tWYyuZr9rm32BuOS2Nj06hVL3XdD+aupt/dcc0+Pl27VoZYaxW7q2b1+XXOv74a6jDa1D9fC+ZKofMmauvqWD7D25Wt21i89fcMhVmiF4QswhOHRgSEMYQjD4wPDUzCUMop33Fue0QP8mSEzxD7zaKjZuJQ7mpJFcZ5Z4qitMeR7Gq6UKKrQneVENvbt/7q7A8q8rkRKdPI0au8YPnFT0BvNI2Hu5r41QGeayjJPC7eTbx/B74DVfvvDJ2MUD91ZTnycx1InsZSJ+/Lf735JpM5T5c+jWuHK/ccZUg///YuecN9oL3QPy9E8WvzSWnZQlvnXmuwWy313hNmHrgE2w+h/FSuECBxDe/cpn15Pd/BQV6wgFLl/I5l93jWE48sVtwV17no0lKqzKkvTrJPULfMV0aSEK2YE6378mrvspiK6Ch+VfZ+Sesf/o+cabmtoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgi/8AIGKne7Rb7XIAAAAASUVORK5CYII=" width="130" height="104" alt="HNG logo">
+          <img src="https://zuri.team/img/zuri-internship-img.svg" alt="Zuri logo">
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
